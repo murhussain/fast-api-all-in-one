@@ -1,0 +1,45 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "fastapi.params",
+        "description": "fastapi.params",
+        "isExtraImport": true,
+        "detail": "fastapi.params",
+        "documentation": {}
+    },
+    {
+        "label": "get_posts",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_posts():\n    return {\"data\": \"This is a list of posts\"}\n@app.post(\"/post/create\")\ndef create_post(payload: dict = Body(...)):\n    print(payload)\n    return {\"New_post\": f\"Post created with title: {payload['title']} and body: {payload['content']}\"}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "create_post",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def create_post(payload: dict = Body(...)):\n    print(payload)\n    return {\"New_post\": f\"Post created with title: {payload['title']} and body: {payload['content']}\"}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def root():\n    return {\"message\": \"Welcome to my first api!\"}\n@app.get(\"/posts\")\ndef get_posts():\n    return {\"data\": \"This is a list of posts\"}\n@app.post(\"/post/create\")\ndef create_post(payload: dict = Body(...)):\n    print(payload)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
